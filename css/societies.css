@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Vollkorn:ital@1&display=swap');
+
+
+.societies h1{
+  text-align: center;
+  font-family: 'Poppins',sans;
+  margin-top: 10px;
+}
+.societies h2{
+  text-align: center;
+  font-family: 'Poppins',sans;
+  margin: 10px 0 36px;
+  font-size: 1.4rem;
+}
+
+
+
+.Container{
+  position: relative;
+  display: flex;
+  width: 75vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 10px auto;
+
+}
+
+.Container .Card{
+  position: relative;
+  width: 273px;
+  height: 303px;
+  background: linear-gradient(142deg, rgba(168,230,218,1) 2%, rgba(151,227,245,1) 30%, rgba(130,190,223,1) 66%, rgba(104,199,219,1) 74%, rgba(101,189,219,1) 84%, rgba(57,181,213,1) 96%);
+  margin: 25px 0;
+  
+  
+
+}
+
+.Container .Card .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: bottom;
+  transition: 0.75s ease-in-out;
+}
+.Container .Card .content{
+
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  transform-origin: top;
+  transform: translateY(100%) rotateX(-90deg);
+  transition: 0.75s ease-in-out;
+  
+  
+}
+.Container .Card .content .title{
+  font-size: 1.6rem;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.Container .Card .content .tag-line{
+  font-size: 1.15rem;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Container .Card .content a{
+  text-decoration: none;
+}
+
+.Container .Card .content a .icons{
+  padding: 5px;
+  margin: 40px 15px;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  
+  
+}
+
+
+
+
+.Container .Card:hover .img-box{
+  transform: translateY(-100%) rotateX(90deg);
+}
+
+.Container .Card:hover .content{
+  transform: translateY(0%) rotateX(0deg);
+}
+
+
+
+
+
+
+
+
+
+
